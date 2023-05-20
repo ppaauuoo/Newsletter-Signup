@@ -62,8 +62,8 @@ app.post("/failure", function(req,res){
     
 
 //initial port
-app.listen(3000, function(){
-    console.log('server started on localhost:3000');
+app.listen(process.env.PORT || 3000, function(){
+    console.log('server started and running!');
 });
 
 // d86b2439-7b7b-43fd-8466-abddafffce82
